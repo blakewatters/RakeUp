@@ -1,9 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    daemons (1.1.9)
     diff-lcs (1.2.4)
-    eventmachine (1.0.3)
     git (1.2.5)
     jeweler (1.8.4)
       bundler (~> 1.0)
@@ -12,8 +10,6 @@ GEM
       rdoc
     json (1.8.0)
     multi_json (1.7.3)
-    puma (2.0.1)
-      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rake (10.0.4)
     rdoc (4.0.1)
@@ -30,10 +26,6 @@ GEM
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
     simplecov-html (0.7.1)
-    thin (1.5.1)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
 
 PLATFORMS
   ruby
@@ -41,10 +33,8 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.3.0)
   jeweler (~> 1.8.0)
-  puma (~> 2.0.1)
   rack (~> 1.5.0)
   rake (~> 10.0.0)
   rdoc (~> 4.0)
   rspec (~> 2.13.0)
   simplecov (~> 0.7.0)
-  thin (~> 1.5.1)
