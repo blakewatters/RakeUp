@@ -17,7 +17,20 @@ Gem::Specification.new do |s|
     "README.md"
   ]
   s.files = [
-    "README.md"
+    "Gemfile",
+    "Gemfile.lock",
+    "LICENSE",
+    "README.md",
+    "Rakefile",
+    "VERSION",
+    "lib/rakeup.rb",
+    "lib/rakeup/server_task.rb",
+    "lib/rakeup/shell.rb",
+    "lib/rakeup/status.rb",
+    "lib/rakeup/utilities.rb",
+    "lib/rakeup/utilities/port_check.rb",
+    "lib/rakeup/utilities/process_check.rb",
+    "rakeup.gemspec"
   ]
   s.homepage = "http://github.com/blakewatters/RakeUp"
   s.licenses = ["MIT"]
@@ -29,6 +42,7 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<rake>, ["~> 10.0.0"])
       s.add_runtime_dependency(%q<rack>, ["~> 1.5.0"])
       s.add_runtime_dependency(%q<puma>, ["~> 2.0.1"])
       s.add_runtime_dependency(%q<thin>, ["~> 1.5.1"])
@@ -38,6 +52,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.0"])
       s.add_development_dependency(%q<simplecov>, ["~> 0.7.0"])
     else
+      s.add_dependency(%q<rake>, ["~> 10.0.0"])
       s.add_dependency(%q<rack>, ["~> 1.5.0"])
       s.add_dependency(%q<puma>, ["~> 2.0.1"])
       s.add_dependency(%q<thin>, ["~> 1.5.1"])
@@ -48,6 +63,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<simplecov>, ["~> 0.7.0"])
     end
   else
+    s.add_dependency(%q<rake>, ["~> 10.0.0"])
     s.add_dependency(%q<rack>, ["~> 1.5.0"])
     s.add_dependency(%q<puma>, ["~> 2.0.1"])
     s.add_dependency(%q<thin>, ["~> 1.5.1"])
