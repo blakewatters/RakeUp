@@ -60,7 +60,7 @@ end
 
 ## Supported Web Servers
 
-Any web server that is imported by your Gemfile and has a Rack handler available is available for execute. Commonly used servers are thin, mongrel, webrick, and puma. See `rakeup --help` for more examples.
+Any web server that is imported by your Gemfile and has a Rack handler available is available for execute. Commonly used servers are thin, mongrel, webrick, and puma. See `rackup --help` for more examples.
 
 ## Customizing the Tasks
 
