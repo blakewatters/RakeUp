@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 # Library dependencies
-gem "rake", "~> 10.0.0"
+gem "rake", "~> 10.1.0"
 gem "rack", "~> 1.5.0"
 
 group :development do
