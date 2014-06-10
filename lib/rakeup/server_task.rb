@@ -24,7 +24,7 @@ module RakeUp
   
     def initialize(name = :server)
       @name = name
-      @host = nil
+      @host = 'localhost'
       @port = 4567
       @pid_file = "tmp/#{name}.pid"
       @rackup_file = "#{name}.ru"
